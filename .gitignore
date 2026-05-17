@@ -1,0 +1,99 @@
+# ─────────────────────────────────────────────────────────
+# PRIVATE — business strategy, pricing, PII, vendor specifics
+# These files MUST NEVER be committed to the public repo.
+# ─────────────────────────────────────────────────────────
+.private/
+*.private.md
+secrets/
+.env
+.env.*
+!.env.example
+
+# ─────────────────────────────────────────────────────────
+# Dependencies
+# ─────────────────────────────────────────────────────────
+node_modules/
+.pnpm-store/
+.yarn/
+
+# ─────────────────────────────────────────────────────────
+# Build artifacts
+# ─────────────────────────────────────────────────────────
+dist/
+build/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+
+# ─────────────────────────────────────────────────────────
+# Test & coverage
+# ─────────────────────────────────────────────────────────
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# ─────────────────────────────────────────────────────────
+# Logs
+# ─────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ─────────────────────────────────────────────────────────
+# IDE / Editor
+# ─────────────────────────────────────────────────────────
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─────────────────────────────────────────────────────────
+# OS
+# ─────────────────────────────────────────────────────────
+.DS_Store
+ehthumbs.db
+desktop.ini
+
+# ─────────────────────────────────────────────────────────
+# Database / Prisma local
+# ─────────────────────────────────────────────────────────
+prisma/migrations/dev.db*
+*.sqlite
+*.sqlite3
+
+# ─────────────────────────────────────────────────────────
+# Infrastructure secrets
+# ─────────────────────────────────────────────────────────
+*.tfstate
+*.tfstate.backup
+.terraform/
+*.tfvars
+!*.tfvars.example
+gcp-key*.json
+service-account*.json
+*.pem
+*.key
+*.crt
+
+# ─────────────────────────────────────────────────────────
+# n8n local data
+# ─────────────────────────────────────────────────────────
+infra/n8n/.n8n/
+infra/docker/data/
+
+# ─────────────────────────────────────────────────────────
+# Misc local
+# ─────────────────────────────────────────────────────────
+*.local
+.cache/
+tmp/
